@@ -13,7 +13,7 @@ Graduated from university in 2020, currently I work as a system administrator
 * Git
 ## Сode example
 ```
-public class MaxMin {    
+public class Max {    
     public static void main(String[] args) {        
         Scanner s = new Scanner(System.in);
         System.out.println("Размер массива: ");
