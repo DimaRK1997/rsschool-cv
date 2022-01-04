@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="contanier-myfoto">
-            <img src=".\assets\img\My foto.jpg"  alt="my foto">
+            <img src="./assets/img/Myfoto.jpg"  alt="my foto">
         </div>
         <div class="contanier-name">
             <h1>Dmitriy Kedik</h1>
@@ -66,20 +66,15 @@
         </aside>
         <div class="contanier-nav-main">
             <main class="contanier-main">
-                <ul class="nav-list">
-                    <li class="items">
-                        <h2 id="about">About</h2>
-                    </li>
-                        <p>Graduated from university in 2020, currently I work as a system administrator</p>
-                    <li class="items">
-                        <h2 id="edu">Education</h2>
-                    </li>
-                        <p>Higher technical education</p>
-                    <li class="items">
-                        <h2 id="code">Сode example</h2>
-                    </li> 
-                    <pre class="code-example">
-                        <code>
+                <section class="nav-list">
+                    <h2 id="about">About</h2>
+                    <p>Graduated from university in 2020, currently I work as a system administrator</p>
+                    <h2 id="edu">Education</h2>
+                    <p>Higher technical education</p>
+                    <h2 id="code">Сode example</h2>
+                </section>    
+                <pre class="code-example">
+                    <code>
     public class Max {    
         public static void main(String[] args) {        
             Scanner s = new Scanner(System.in);
@@ -88,19 +83,18 @@
             int[] array = new int[a];
             int max = array[0]; 
             System.out.println("Введите числа в массив: ");
-            for(int i = 0; i < array.length; i++) {
+            for(int i = 0; i &lt; array.length; i++) {
                 array[i] = s.nextInt();
             }           
-            for(int i = 0; i < array.length; i++) {
+            for(int i = 0; i &lt; array.length; i++) {
                 if(array[i] > max) 
                     max = array[i];
             }
             System.out.println("Максимальное число: " + max);           
         }    
     }                                                    
-                        </code>
-                    </pre>
-                </ul>
+                    </code>
+                </pre>
             </main>
         </div>
     </div>
